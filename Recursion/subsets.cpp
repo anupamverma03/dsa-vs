@@ -14,7 +14,7 @@ void pS(vector<int> &arr, vector<int> &ans, int i){
     ans.push_back(arr[i]); // work in current stack
     pS(arr, ans, i+1); // call for next element
 
-    ans.pop_back(); // deletion of last element to exclude it in back propagation
+    ans.pop_back(); // not required step as ans is passed after updating to every function call
     pS(arr, ans, i+1);
 }
 
