@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 class teacher{ //declaration of class
-    public: // access modifier
+public: // access modifier
     //properties or attributes
     string name;
     string dept;

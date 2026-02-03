@@ -15,7 +15,7 @@ public:
         salary = sal;
     }
     //copy constructor
-    Teacher(Teacher &orgObj){
+    Teacher(Teacher &orgObj){//orgObj is just paramter name for an object inside Teacher
         this->name = orgObj.name;
         this->dept = orgObj.dept;
         this->subject = orgObj.subject;
@@ -30,9 +30,9 @@ public:
 int main(){
     // Teacher t1; // constructor gets called on obect declataion automatically
     // t1.name = "KM Bhurchandi";
-    Teacher t1("KM Bhurchandi", "EC", "Signal Process.", 16000.00); // declarayion and initialization
+    Teacher t1("KM Bhurchandi", "EC", "Signal Processing", 160000.00); // declarayion and initialization
     cout << t1.name << endl;
-    cout << t1.dept;
+    cout << t1.dept << endl;;
     Teacher t2(t1); // custom copy constructor is called if declared
     cout << t2.name << endl;
     cout << t2.dept;
